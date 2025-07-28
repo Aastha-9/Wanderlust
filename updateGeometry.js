@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const axios = require("axios");
 const Listing = require("./models/listing"); // Adjust path as needed
 
-const MAPBOX_TOKEN = 'your_mapbox_access_token_here'; // 🔁 Replace with your token
+const MAP_TOKEN = process.env.MAP_TOKEN; // 🔁 Replace with your token
 
 const dbUrl = "mongodb://127.0.0.1:27017/wanderlust"; // 🔁 Replace with your actual DB URL
 
